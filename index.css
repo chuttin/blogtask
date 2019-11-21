@@ -22,8 +22,8 @@ body {
   justify-content: center;
   align-items: center;
 
-  background-image: url(https://ftp.bmp.ovh/imgs/2019/10/440cf6e7d2fb738e.jpg);
-  filter: blur(8px);
+  /* background-image: url(https://ftp.bmp.ovh/imgs/2019/10/440cf6e7d2fb738e.jpg); */
+  /* filter: blur(8px); */
 }
 
 
