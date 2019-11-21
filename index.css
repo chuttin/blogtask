@@ -8,6 +8,7 @@ body {
   font-weight: bolder;
   margin: 0;
   padding: 0;
+  backdrop-filter:blur(3px);
 }
 
 .content {
@@ -17,7 +18,7 @@ body {
 
 .nav{
   /*background-color: #eb6f43;*/
-  flex: 0 1 35%;
+  flex: 0 1 25%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,14 +35,14 @@ body {
   /* align-items: center; */
   width: 70%;
   height: 100%;
-  background-color: black;
+  /*background-color: black;*/
 }
 
 .author_info_avatar{
-  margin-top: 50px;
+  margin-top: 60px;
   width: 100%;
   height: 80px;
-  background-color: red;
+  /*background-color: red;*/
   display: flex;
   /* flex-direction: column; */
   align-items: center;
@@ -52,6 +53,7 @@ body {
   width: 70px;
   height: 70px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .author_info_name{
@@ -59,54 +61,59 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: turquoise;
+  /*background-color: turquoise;*/
 }
 
 .author_info_name p{
   font-size: 20px;
   font: bolder;
+  color: white;
 }
 
 .author_info_des{
   width: 100%;
-  background-color: yellowgreen;
+  text-align: center;
+  /*background-color: yellowgreen;*/
 }
 
 .author_info_des p{
-  color: white;
-  font-size: 20px;
+  color:white;
+  font-size: 15px;
   font: italic;
+
 }
 
 .social_site{
   width: 100%;
-  background-color: violet;
+  /*background-color: violet;*/
   height: 70px;  /*还没有内容撑起来，所以先写这么一句*/
   display: flex;
   flex-direction: row;
+  margin-top: 40px;
 }
 
 .left{
   flex: 0 1 50%;
-  background-color: tomato;
+  /*background-color: tomato;*/
   height: 300px;
 }
 
 .right{
   flex: 1;
   height: 300px;
-  background-color: yellow;
+  /*background-color: yellow;*/
 }
 
 .left_site_github,
 .right_site_github,
 .left_site_blog,
 .right_site_search,
-.left_site_about
+.left_site_about,
+.left_site_code
 {
   width: 100%;
   height: 50px;
-  background-color: thistle;
+  /*background-color: thistle;*/
   display: flex;
   /* flex-direction: row; */
   /* justify-content: center; */
@@ -117,21 +124,23 @@ body {
 .right_site_github img,
 .left_site_blog img,
 .right_site_search img,
-.left_site_about img
+.left_site_about img,
+.left_site_code img
 {
   width: 25px;
   height: 25px;
   margin-right: 8px;
-  margin-left: 40px;
+  margin-left: 8px;
 }
 
 .left_site_github a,
 .right_site_github a,
 .left_site_blog a,
 .right_site_search a,
-.left_site_about a
+.left_site_about a,
+.left_site_code a
 {
-  font-size: 18px;
+  font-size: 13px;
   color: white;
   text-decoration: none;
 }
@@ -144,6 +153,3 @@ main {
   flex: 1; /* 宽度自适应 */
   background-color: #d6d6d6;
 }
-
-
-
