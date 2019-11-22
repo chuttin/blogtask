@@ -1,149 +1,117 @@
 html,
-body {
+body  {
   display: flex;
   flex-direction: column;
-  /* min-height: 1200px; */
   height: 100%;
-  font-size: 28px;
-  /* font-weight: bolder; */
   margin: 0;
   padding: 0;
+  font-size: 100%;
   backdrop-filter:blur(3px);
 }
 
-.content {
-  flex: 1; /* 高度自适应 */
+.content  {
+  flex: 1;
   display: flex;
 }
 
-.nav{
-  /*background-color: #eb6f43;*/
+.nav {
   flex: 0 1 25%;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* background-image: url(https://ftp.bmp.ovh/imgs/2019/10/440cf6e7d2fb738e.jpg); */
-  /* filter: blur(8px); */
 }
 
 
-.author_info{
+.author-info {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
   width: 70%;
   height: 100%;
-  /*background-color: black;*/
 }
 
-.author_info_avatar{
-  margin-top: 60px;
+.author-info-avatar {
+  margin-top: 4rem;
   width: 100%;
-  height: 80px;
-  /*background-color: red;*/
+  height: 5rem;
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
 }
 
-.author_info_avatar img{
-  width: 70px;
-  height: 70px;
+.author-info-avatar img {
+  width: 4.3rem;
+  height: 4.3rem;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.author_info_name{
+.author-info-name {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  /*background-color: turquoise;*/
 }
 
-.author_info_name p{
-  font-size: 20px;
+.author-info-name p {
+  font-size: 1.25rem;
   font: bolder;
   color: white;
 }
 
-.author_info_des{
+.author-info-desc {
   width: 100%;
   text-align: center;
-  /*background-color: yellowgreen;*/
 }
 
-.author_info_des p{
+.author-info-desc p {
   color:white;
-  font-size: 15px;
+  font-size: 1rem;
   font: italic;
 
 }
 
-.social_site{
+.social-site {
   width: 100%;
-  /*background-color: violet;*/
-  height: 70px;  /*还没有内容撑起来，所以先写这么一句*/
   display: flex;
   flex-direction: row;
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
-.left{
+.left {
   flex: 0 1 50%;
-  /*background-color: tomato;*/
-  height: 300px;
+  height: 18.75rem;
 }
 
-.right{
+.right {
   flex: 1;
-  height: 300px;
-  /*background-color: yellow;*/
+  height: 18.75rem;
 }
 
-.left_site_github,
-.right_site_github,
-.left_site_blog,
-.right_site_search,
-.left_site_about,
-.left_site_code,
-.right_site_home
-{
+.left-site-github,
+.right-site-github,
+.left-site-blog,
+.right-site-search,
+.left-site-about,
+.left-site-code,
+.right-site-home
+ {
   width: 100%;
-  height: 50px;
-  /*background-color: thistle;*/
+  height: 3.125rem;
   display: flex;
-  /* flex-direction: row; */
-  /* justify-content: center; */
   align-items: center;
 }
 
-.left_site_github img,
-.right_site_github img,
-.left_site_blog img,
-.right_site_search img,
-.left_site_about img,
-.left_site_code img,
-.right_site_home img
-{
-  width: 25px;
-  height: 25px;
-  margin-right: 8px;
-  margin-left: 8px;
+.social-site img
+ {
+  width: 1.56rem;
+  height: 1.56rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
-.left_site_github a,
-.right_site_github a,
-.left_site_blog a,
-.right_site_search a,
-.left_site_about a,
-.left_site_code a,
-.right_site_home a
-{
-  font-size: 13px;
+.social-site a
+ {
+  font-size: 0.8rem;
   color: white;
   text-decoration: none;
 }
@@ -151,124 +119,103 @@ body {
 
 main {
   display: flex;
-  flex: 1; /* 宽度自适应 */
+  flex: 1;
   flex-direction: column;
   background-color: white;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
   padding-top: 0;
-  /* justify-content: center; */
   align-items: center;
 }
 
-.main_contain{
+.main-contain {
   width: 60%;
-  /* background-color: black; */
 }
 
-.latest_commit{
+.top-article {
   width: 100%;
   background-color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-  /* height: 70px;暂时先这么写，因为没有内容撑起来 */
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
 }
 
-.article_info{
+.top-article-info {
   width: 100%;
-  /* background-color: black; */
-  /* margin-top: 20px; */
 }
 
-.article_info p{
+.top-article-info p {
   margin: 0;
   padding: 0;
 }
 
-.article_caption{
-  /* background-color: antiquewhite; */
-}
-
-.article_caption p{
-  font-size: 25px;
+.top-article-caption p {
+  font-size: 1.57rem;
   font: bold;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   font-weight: bold;
 }
 
-.article_date{
-  /* background-color: blue; */
-}
-
-.article_date p{
-  font-size: 10px;
+.top-article-date p {
+  font-size: 0.625rem;
   color: #d6d6d6;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 
-.article_comments{
-  /* background-color: brown; */
-}
-
-.article_comments p{
-  font-size: 15px;
+.top-article-comments p {
+  font-size: 1rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.article_details{
-  /* background-color: blueviolet; */
-  margin-bottom: 20px;
+.top-article-details {
+  margin-bottom: 1.25rem;
 }
 
-.article_details a{
-  font-size: 12px;
+.top-article-details a {
+  font-size: 0.75rem;
   text-decoration: none;
   color: #1296db;
 }
 
-.article_img{
+.top-article-img {
   display: flex;
   background-color: white;
-  height: 180px;
+  height: 11.25rem;
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
-.article_img img{
+.top-article-img img {
   max-width: 100%;
 }
 
-.hr{
+.hr {
   width: 100%;
-  margin-left: 10px;
-  /* background-color: black; */
-  height: 20px;
+  margin-left: 0.625rem;
+  height: 1.25rem;
   border-bottom: 1px solid #cdcdcd;
 }
 
-.commits{
-  display: ;
-  margin-top: 20px;
+.post {
+  margin-top: 1.25rem;
   width: 100%;
-  height: 200px;
-  /* background-color: black; */
+  height: 12.5rem;
 }
 
-.commits img{
-  width: 90px;
-  margin-left: 10px;
+.post img {
+  width: 5.65rem;
+  height: auto;
+  object-fit: contain;
+  margin: 0 0.625rem auto 0.625rem; 
 }
 
-.commits_1{
+.post-1 {
   display: flex;
   flex-direction: row;
 }
 
-.commits_articles_info{
+.post-1-info {
   flex: 1;
-  /* width: 20px; */
-  height: 20px;
   background-color: blue;
 }
