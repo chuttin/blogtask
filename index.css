@@ -334,6 +334,7 @@ button:hover{
   top: 0.5rem;
   right: 0.5rem;
   outline: none;
+  background: transparent;
 }
 
 #about-close img{
