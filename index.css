@@ -288,10 +288,6 @@ article h2 {
   width: 80%;
 }
 
-button:hover{
-  cursor: pointer;
-}
-
 .job,
 .location {
   display: flex;
