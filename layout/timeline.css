@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  outline: none;
   font-size: 100%;
 }
 
@@ -72,6 +73,7 @@ h1 span {
   margin-left: -8rem;
   width: 8.1rem;
   float: right;
+  z-index: 1;
 }
 
 .data-date-l p {
@@ -89,6 +91,7 @@ h1 span {
   margin-right: -8rem;
   width: 8.1rem;
   float: right;
+  z-index: 1;
 }
 
 .data-date-r p {
@@ -118,6 +121,7 @@ h1 span {
   font-weight: 500;
   color: #17abe3;
 }
+
 
 .timeline-content span {
   font-size: 1rem;

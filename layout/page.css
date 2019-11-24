@@ -8,10 +8,11 @@ body {
 }
 
 .topbar {
-  position: sticky;
-  top: 0;
   width: 100%;
   height: 2.5rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   border-bottom: 1px solid #cdcdcd;
   background-color: white;
 }
@@ -45,6 +46,7 @@ body {
 .topbar-right {
   height: 100%;
   width: 2.5rem;
+  /* background-color: brown; */
   float: right;
   display: flex;
   justify-content: center;
@@ -59,14 +61,16 @@ body {
 }
 
 .article-container {
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* background-color: teal; */
+  height: 100%;
 }
 
 .article-info {
   width: 60%;
+  /* background-color: tomato */
   float: left;
 }
 
