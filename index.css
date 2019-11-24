@@ -2,10 +2,13 @@ html,
 body  {
   display: flex;
   flex-direction: column;
-  height: 100%;
   margin: 0;
   padding: 0;
+
+  height: 100%;
+
   font-size: 100%;
+
   backdrop-filter:blur(3px);
   background-attachment: fixed;
   overflow: hidden;
@@ -13,39 +16,42 @@ body  {
 
 .content  {
   flex: 1;
-  height: 100%;
-  width: 100%;
   position: relative;
   transform: none;
   display: flex;
   justify-content: start;
+
+  height: 100%;
+  width: 100%;
 }
 
 .nav {
-  height: 100%;
-  width: 25%;
-
   display: flex;
   justify-content: center;
   align-items: center;
+
+  height: 100%;
+  width: 25%;
 }
 
 
 .author-info {
   display: flex;
   flex-direction: column;
+  align-items: center;
+
   width: 70%;
   height: 100%;
-  align-items: center;
 }
 
 .author-info-avatar {
   margin-top: 4rem;
-  width: 100%;
-  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  width: 100%;
+  height: 5rem;
 }
 
 .author-info-avatar img {
@@ -74,17 +80,19 @@ body  {
 }
 
 .author-info-desc p {
-  color:white;
   font-size: 1rem;
   font: italic;
+
+  color:white;
 }
 
 .social-site {
-  width: 100%;
   display: flex;
   flex-direction: row;
   margin-top: 2.5rem;
   justify-content:center;
+
+  width: 100%;
 }
 
 .left {
@@ -100,18 +108,20 @@ body  {
 .left div,
 .right div
  {
-  width: 100%;
-  height: 3.125rem;
   display: flex;
   align-items: center;
+
+  width: 100%;
+  height: 3.125rem;
 }
 
 .social-site img
  {
-  width: 1.56rem;
-  height: 1.56rem;
   margin-right: 0.5rem;
   margin-left: 0.5rem;
+
+  width: 1.56rem;
+  height: 1.56rem;
 }
 
 .social-site a,
@@ -128,18 +138,19 @@ body  {
 }
 
 main {
-  width: 75%;
-  display: flex;
-  height: 100%;
-  left: 30%;
-  overflow: scroll;
-
-  flex-direction: column;
-  background-color: white;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
   padding-top: 2rem;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 30%;
+
+  height: 100%;
+  width: 75%;
+
+  background-color: white;
+  overflow: scroll;
 }
 
 .main-contain {
@@ -147,9 +158,11 @@ main {
 }
 
 .top-article {
-  width: 100%;
-  background-color: white;
   padding-bottom: 1.25rem;
+
+  width: 100%;
+
+  background-color: white;
   border-bottom: solid #D0D0D0 1px;
 }
 
@@ -163,19 +176,22 @@ article p {
 }
 
 article a {
+  margin-bottom: 1.25rem;
+
   font-size: 1rem;
+
   text-decoration: none;
   color: #1296db;
-  margin-bottom: 1.25rem;
 }
 
 .top-article img{
-  height: 11.25rem;
-  overflow: hidden;
-  width: 100%;
   margin: auto;
-  object-fit: cover;
 
+  height: 11.25rem;
+  width: 100%;
+
+  overflow: hidden;
+  object-fit: cover;
 }
 
 ul {
@@ -184,32 +200,39 @@ ul {
 }
 
 ul li {
+  padding-bottom: 1.25rem;
   margin-top: 1.25rem;
-  width: 100%;
-  height: auto;
   display: flex;
   flex-direction: row;
-  padding-bottom: 1.25rem;
+
+  width: 100%;
+  height: auto;
+
   border-bottom: solid #D0D0D0 1px;
 }
 
 li img {
+  margin: 0 0.625rem auto 0;
+
   width: 10rem;
   height: 8rem;
+
   object-fit: contain;
-  margin: 0 0.625rem auto 0; 
   border: 1px solid #ddd;
 }
 
 article h1 {
-  font-weight: bold;
   margin: 0;
+
+  font-weight: bold;
 }
 
 article h2 {
-  color: grey;
-  font-size: 0.8rem;
   margin-top: 0;
+
+  font-size: 0.8rem;
+
+  color: grey;
 }
 
 .post-info {
@@ -220,15 +243,16 @@ article h2 {
   position: absolute;
   left: 36.8%;
   top: -470px;
-  background-color: white;
+
   height: 430px;
   width: 380px;
+
+  background-color: white;
 }
 
 .about-info-card {
   position: absolute;
   margin: auto;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -316,12 +340,14 @@ article h2 {
 #about-close {
   position: absolute;
   border: none;
+  top: 0.5rem;
+  right: 0.5rem;
+
   width: 2rem;
   height: 2rem;
 
-  top: 0.5rem;
-  right: 0.5rem;
   outline: none;
+  background: transparent;
 }
 
 #about-close img{
@@ -331,10 +357,10 @@ article h2 {
 
 @media screen and (max-width:900px){
   .nav {
-    width: 4rem;
-    height: 100%;
     top: 0;
     left: 0;
+    width: 4rem;
+    height: 100%;
   }
 
   main {
