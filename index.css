@@ -87,12 +87,12 @@ body  {
   justify-content:center;
 }
 
-.social-site img{
-  cursor: pointer;
-}
-
 .social-site img:hover{
   filter: brightness(1.75);
+}
+
+button:hover{
+  cursor: pointer;
 }
 
 .left {
