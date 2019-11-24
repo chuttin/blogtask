@@ -144,12 +144,11 @@ h1 span {
     width: 100%;
     margin-bottom: 2rem;
   }
-  .timeline-block-right {
-    float: none;
+  .data-date-l,
+  .data-date-r{
+    display: none;
   }
-
   .timeline-block-left {
-    float: none;
     direction: ltr;
   }
 }

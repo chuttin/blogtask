@@ -95,6 +95,14 @@ body  {
   width: 100%;
 }
 
+.social-site img:hover{
+  filter: brightness(1.75);
+}
+
+button:hover{
+  cursor: pointer;
+}
+
 .left {
   flex: 0 1 50%;
   height: 18.75rem;
